@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Condensed&display=swap');
+
+body {
+  background-color: #98b2d1;
+}
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  margin: 20px;
+}
+#quote-box {
+  border-radius: 10px;
+  background-color: white;
+  width: 500px;
+  margin: auto;
+  padding: 30px;
+}
+
+.quote-text {
+  color: #98b2d1;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+.author-text {
+  color: #98b2d1;
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 20px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 10px;
+}
+
+#tweet-quote {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.actionBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#new-quote {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
