@@ -1,5 +1,3 @@
-/** @jsx React.DOM */
-
 var colors = [
   "#feae51", "#98b2d1", "#b35f44", "#f3df4d",     "#3078b4", "#ec8b83", "#00a779", "#9369a8", "#cd4a77", "#434852", "#e0b589", "#9d915a", "#96999b"
   ]
@@ -42,20 +40,25 @@ var colors = [
     }
     render() {
       return (
-        <div>
-          <h1>Quote of the Day</h1>
-          <div id="quote-box">
-            <div id="text" className="quote-text" style={{color: this.state.color}}><i class="fa fa-quote-left"></i>&nbsp;&nbsp;{this.state.quoteText}&nbsp;&nbsp;<i class="fa fa-quote-right"></i></div>
-            <div id="author" className="author-text" style={{color: this.state.color}}>-&nbsp;{this.state.author}</div>
-            <div className="actionBar">
-              <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${this.state.quoteText}&hashtags=quoteofthedaybyzumo`} target="_top"><i class="fa fa-twitter" style={{color: this.state.color}}></i></a>
-              <button id="new-quote" style={{backgroundColor: this.state.color}} onClick={this.newQuote}>New Quote</button>
+              <div className="container">
+            <h1 className="title">Quote of the Day</h1>
+            <div className="quote-container">
+              <div>
+                <div id="quote-box">
+              <div id="text" className="quote-text" style={{color: this.state.color}}><i class="fa fa-quote-left"></i>&nbsp;&nbsp;{this.state.quoteText}&nbsp;&nbsp;<i class="fa fa-quote-right"></i></div>
+              <div id="author" className="author-text" style={{color: this.state.color}}>-&nbsp;{this.state.author}</div>
+              <div className="actionBar">
+                <a id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${this.state.quoteText}&hashtags=quoteofthedaybyzumo`} target="_top"><i class="fa fa-twitter" style={{color: this.state.color}}></i></a>
+                <button id="new-quote" style={{backgroundColor: this.state.color}} onClick={this.newQuote}>New Quote</button>
+              </div>
             </div>
+                <div className="footer">by ZUMO</div>
+              </div>
           </div>
-          <div className="footer">by ZUMO</div>
         </div>
       )
     }
   }
   
   ReactDOM.render(<QuoteOfTheDay />, document.getElementById('root'));
+  

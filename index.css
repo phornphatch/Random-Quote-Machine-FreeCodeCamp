@@ -10,6 +10,23 @@ h1 {
   color: white;
   margin: 20px;
 }
+
+.container {
+  height: 100vh;
+}
+
+.quote-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10vh;
+  height: 90vh;
+}
+
+.title {
+  height: 10vh;
+}
+
 #quote-box {
   border-radius: 10px;
   background-color: white;
